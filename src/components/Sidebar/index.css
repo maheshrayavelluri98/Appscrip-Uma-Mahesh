@@ -1,0 +1,47 @@
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: transparent;
+  height: 50%;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .sidebar a {
+    padding: 8px;
+    margin: 4px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 250px;
+    padding: 15px;
+  }
+
+  .sidebar a {
+    padding: 9px;
+    margin: 5px 0;
+  }
+}

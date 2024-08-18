@@ -1,0 +1,36 @@
+.sort-dropdown {
+  margin: 20px 0;
+  align-self: flex-end;
+}
+
+.sort-dropdown label {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .sort-dropdown {
+    margin: 10px 0;
+    align-self: center;
+  }
+
+  .sort-dropdown label {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sort-dropdown {
+    margin: 15px 0;
+    align-self: center;
+  }
+
+  .sort-dropdown label {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}

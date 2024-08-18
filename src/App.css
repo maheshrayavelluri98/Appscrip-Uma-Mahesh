@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  .content > * {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .content > * {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  .content > * {
+    padding: 30px;
+  }
+}

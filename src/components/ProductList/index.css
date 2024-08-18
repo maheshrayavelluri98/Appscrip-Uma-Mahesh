@@ -1,0 +1,141 @@
+.product-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-item {
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.product-item h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 15px 0;
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.product-item p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.product-item button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.product-item .like-img {
+  color: red;
+  height: 20px;
+  width: 20px;
+}
+
+.grid-class {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #0284c7;
+}
+
+img {
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.price {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+@media (max-width: 767px) {
+  .product-item h3 {
+    font-size: 16px;
+  }
+
+  .product-item p {
+    font-size: 12px;
+  }
+
+  .grid-class {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .loader p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-item h3 {
+    font-size: 17px;
+  }
+
+  .product-item p {
+    font-size: 13px;
+  }
+
+  .grid-class {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  img {
+    max-width: 75%;
+  }
+}
+
+.rate {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.description {
+  overflow: hidden;
+}
